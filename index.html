@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T H U R S D A Y</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>
+  <body>
+    <!-- HIDE AND SHOW-->
+    <div id="box">
+      <h3 id="box__heading">
+        Heading
+        <span id="box__indicator"></span>
+      </h3>
+      <div id="box__content">Content</div>
+    </div>
+    <!-- APPEND CHILD-->
+    <div class="append-child">
+      <ul id="items">
+        <li>mela</li>
+        <li>pera</li>
+      </ul>
+    </div>
+    <!-- BUTTONS-->
+    <div class="btn">
+      <button id="click">TEST</button>
+      <button id="append">APPEND</button>
+      <button id="calculate">BMI calculate</button>
+    </div>
+    <!-- LABEL-->
+    <label for="height">HEIGHT in cm:</label>
+    <input type="text" id="height" name="height" placeholder="Type in" />
+    <br /><br />
+    <label for="weight">WEIGHT in kg:</label>
+    <input type="text" id="weight" name="weight" />
+    <br />
+
+    <div>Your BMI is: <span id="resultBmi">XXX</span></div>
+
+    <script src="first.js"></script>
+  </body>
+</html>
