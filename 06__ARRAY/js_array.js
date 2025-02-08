@@ -9,6 +9,7 @@ let newStudent = "Piero";
 persons.push(newStudent); // am Schluss hinzufügen
 console.log(persons);
 
+
 // ARRAY _ 36
 
 console.log(persons.length);

@@ -1,42 +1,45 @@
 "use strict";
 
-// -- 22 / A D D  E V E N T L I S T E N E R
-//.........................................................
 
-document.getElementById("click").onclick = function () {
-  alert("ti voglio bene Nikili");
-};
-
-/*   ADD PARAMETER
-.........................................................
+//      ADD PARAMETER  _  15
+// .........................................................
 let run = function(x, y) {
      console.log("1: " + x);
      console.log("2: " + y);
 }
 run("Vittorino", "Veronica");
-*/
 
-/*  -- 16 / R E T U R N  W E R T
-.........................................................
+
+
+//      RETURN WERT  _  16
+// .........................................................
 let sum = function(a, b) {
     return a+b;
 }
 
 let result = sum(1,5);
 console.log("The result is " + result);
-*/
-/*
-let run = function (a) {
+
+let runTwo = function (a) {
   console.log(a);
 };
-
 let f = function () {};
+runTwo(f);
 
-run(f);
-*/
 
-/* -- 27 / H I D E  A N D  S H O W 
-.........................................................
+
+//      ADD EVENTLISTENER  _  22
+//.........................................................
+
+document.getElementById("click").onclick = function () {
+  alert("ti voglio bene Nikili");
+};
+
+
+
+//      HIDE AND SHOW  _  27
+// .........................................................
+
 let content = document.getElementById("box__content");
 
 let click = (document.getElementById("box__heading").onclick = function () {
@@ -46,8 +49,10 @@ let click = (document.getElementById("box__heading").onclick = function () {
     content.style.display = "none";
   }
 }, false);
-*/
-// -- 27 / O P T I O N AL
+
+
+
+//      OPTIONAL  _  27 b
 // .........................................................
 
 let heading = document.getElementById("box__heading");
@@ -59,7 +64,9 @@ heading.addEventListener("click", function () {
   indicator.classList.toggle("triangle");
 });
 
-// -- 28 / A P P E N D
+
+
+//      APPEND  _  28 
 //.........................................................
 
 let buttonAdd = (document.getElementById("append").onclick = function () {
@@ -72,8 +79,11 @@ let buttonAdd = (document.getElementById("append").onclick = function () {
   itemList.append(newItem);
 });
 
-// -- 31 / B M I  R E C H N E N
+
+
+//      BMI RECHNER  _  31
 //.........................................................
+
 let bmiButton =
   ((document.getElementById("calculate").onclick = function () {
     let height = parseFloat(
