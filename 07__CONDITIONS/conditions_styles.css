@@ -1,3 +1,12 @@
 html {
     background-color: rgba(239, 197, 57, 0.633);
 }
+
+body {
+    font-family: "Helvetica", sans-serif;
+}
+
+table, table td, table th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}

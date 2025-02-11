@@ -48,3 +48,59 @@ let getAbitanti = function(city) {
 
 console.log(getAbitanti("Milano"));
 console.log(getAbitanti("Venezia"));
+
+//   TABLE _ 42
+
+/*
+let table = document.getElementById("and");
+console.log(table);*/ 
+
+let tbodyAnd = document.getElementById("and").children[1];
+let tbodyOr = document.getElementById("or").children[1];
+
+let aValues = [true, false];
+let bValues = [true, false];
+
+for (let d of aValues) {
+    for (let e of bValues) {
+        let tr = document.createElement("tr");
+        
+        let td0 = document.createElement("td");
+        td0.innerHTML = d;
+
+        let td1 = document.createElement("td");
+        td1.innerHTML = e;
+
+        let td2 = document.createElement("td");
+        td2.innerHTML = (d && e);
+
+        tr.appendChild(td0);
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+
+        tbodyAnd.appendChild(tr);  
+    }
+}
+
+for (let d of aValues) {
+    for (let e of bValues) {
+        let tr = document.createElement("tr");
+        
+        let td0 = document.createElement("td");
+        td0.innerHTML = d;
+
+        let td1 = document.createElement("td");
+        td1.innerHTML = e;
+
+        let td2 = document.createElement("td");
+        td2.innerHTML = (d || e);
+
+        tr.appendChild(td0);
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+
+        tbodyOr.appendChild(tr);  
+    }
+}
+
+//  BOOLEANS _ 43
